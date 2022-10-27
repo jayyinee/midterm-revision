@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('DesignerVN-Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Salute;
+  src: url('DFVN-Salute.otf');
+}
+
+.category-title h1 {
+  font-family: Poppins;
+  font-size: 50px;
+  text-align: center;
+}
+
+.category-title p {
+  font-family: Salute;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 2em;
+}
+
+.pho-background-image {
+  background: rgba(0,0,0,0.5) url('pho-background-image.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav{
+  background: rgba(0,0,0,0.5) url('pho-background-image.png');
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 0.7px solid black;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  font-family: Poppins;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-slide {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 1100px;
+  vertical-align: middle;
+}
+
+.slideshow-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 2em;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.slideshow-slide:hover .slideshow-overlay {
+  opacity: 1;
+}
+
+.slideshow-overlay h1 {
+  font-family: Poppins;
+  font-size: 30px;
+  text-align: center;
+}
+
+.slideshow-overlay p {
+  font-family: Salute;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: -3em;
+  margin-right: -3em;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dots {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+  white-space: nowrap;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.bottom {
+  background-color: white;
+  padding: 30px;
+}
